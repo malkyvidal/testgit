@@ -1,12 +1,13 @@
 App = (function () {
-    var id = 0;
+  var id = 0;
 
-    return {
-        getId: function () {
-            id++;
-            return id;
-        }
-    }
-
-
-})()
+  return {
+    getId: function () {
+      id++;
+      return id;
+    },
+    reset: function () {
+      id = 0;
+    },
+  };
+})();
